@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @barbershop.nome %>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @barbershop.endereco %>
+</p>
+
+<p>
+  <strong>Capacidade:</strong>
+  <%= @barbershop.capacidade %>
+</p>
+
+<%= link_to 'Edit', edit_barbershop_path(@barbershop) %> |
+<%= link_to 'Back', barbershops_path %>

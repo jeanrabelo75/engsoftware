@@ -1,0 +1,2 @@
+class Barbearia < ApplicationRecord
+end

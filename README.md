@@ -1,24 +1,27 @@
-# README
+# Barbeator
+Este projeto é referente a disciplina de Engenharia de Software (Laboratório).
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Requisitos
 
-Things you may want to cover:
+Para executar o projeto é necessário ter instalado:
 
-* Ruby version
+* [Docker](https://docs.docker.com/engine/install/ubuntu/)
+* [docker-compose](https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04-pt)
 
-* System dependencies
+## Executando
 
-* Configuration
+Para executar com o Docker siga as instruções abaixo:
 
-* Database creation
+```
+docker-compose up --build
+```
 
-* Database initialization
+Após isso, será necessário fazer as migrações para seu banco:
 
-* How to run the test suite
+```
+docker-compose run web rails db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Agora é só acessar pelo browser
 
-* Deployment instructions
-
-* ...
+http://localhost:3000
